@@ -14,6 +14,9 @@ const links = [
 
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
+    <NavLink to="/" onClick={() => handleClick && handleClick()}>
+      <img src={logo} alt="logo" className="w-[200px] h-[120px] object-contain cursor-pointer" />
+    </NavLink>
     {links.map((item) => (
       <NavLink
         key={item.name}
@@ -34,7 +37,6 @@ const Sidebar = () => {
   return (
     <>
       <div className="md:flex hidden flex-col w-[240px] py-5 px-4 bg-[#5a2940]">
-        <img src={logo} alt="logo" className="w-[200px] h-[120px] object-contain" />
         <NavLinks />
       </div>
 

@@ -30,7 +30,7 @@ const SongDetails = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="container mx-auto my-8 p-8 bg-gray-800 rounded-lg shadow-lg">
       <DetailsHeader
         artistId={artistId}
         songData={songData}
